@@ -1,5 +1,6 @@
 language: c++
-compiler: clang
+compiler: 
+      - clang
+      - gcc
 stages:
       - compile
-      - test
