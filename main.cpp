@@ -6,10 +6,11 @@ using namespace std;
 
 class Prufer {
 private:
-    int INF = 10000000;
+    int INF = INT16_MAX;
     vector<int> PATH;
     vector<vector<int>> graph;
 
+    // Find minimal vertex
     int MIN() {
         int min = INF;
         for (int i = 0; i < graph.size(); i++) {
@@ -22,6 +23,8 @@ private:
         return min;
     }
 
+
+    // Find the second vertex of the edge
     int PARENT(int vertex) {
         for (int i = 0; i < graph.size(); ++i) {
             for (int j = 0; j < graph[i].size(); ++j) {
@@ -37,6 +40,7 @@ public:
         graph.resize(n);
     };
 
+    // Input
     void fillGraph(int m) {
         int start, finish;
         for (int i = 0; i < m; ++i) {
@@ -46,6 +50,7 @@ public:
         }
     }
 
+    // Start of the algorithm
     void startCoding(int minVertex, int m) {
         while (m - PATH.size() != 1) {
             PATH.push_back(PARENT(minVertex));
@@ -56,6 +61,7 @@ public:
     }
 
 
+    // Output
     void code(int m) {
         startCoding(MIN(), m);
         for (int path : PATH) {
