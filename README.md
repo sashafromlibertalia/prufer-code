@@ -1,3 +1,4 @@
+[![Build Status][travis-image]][travis-url]
 # Prufer code
 This is a ```C++``` implementation of a Prufer code algorithm. Decoding currenty is unavailable but you always can made a pull request to change it :)
 ## Input examples
