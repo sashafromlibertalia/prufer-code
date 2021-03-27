@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.com/sashafromlibertalia/prufer-code.svg?branch=main)](https://travis-ci.com/sashafromlibertalia/prufer-code)
 # Prufer code
 This is a ```C++``` implementation of a Prufer code algorithm. Decoding currenty is unavailable but you always can made a pull request to change it :)
 ## Input examples
