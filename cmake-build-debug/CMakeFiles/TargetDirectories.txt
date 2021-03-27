@@ -1,0 +1,3 @@
+/Users/sasha/Documents/Учеба/ИТМО/Дискретка/2 семестр/Код Прюфера/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/sasha/Documents/Учеба/ИТМО/Дискретка/2 семестр/Код Прюфера/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sasha/Documents/Учеба/ИТМО/Дискретка/2 семестр/Код Прюфера/cmake-build-debug/CMakeFiles/_.dir

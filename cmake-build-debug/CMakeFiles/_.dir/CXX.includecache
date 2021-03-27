@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sasha/Documents/Учеба/ИТМО/Дискретка/2 семестр/Код Прюфера/main.cpp
+iostream
+-
+vector
+/Users/sasha/Documents/Учеба/ИТМО/Дискретка/2 семестр/Код Прюфера/vector
+algorithm
+/Users/sasha/Documents/Учеба/ИТМО/Дискретка/2 семестр/Код Прюфера/algorithm
+
