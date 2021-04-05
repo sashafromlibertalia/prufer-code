@@ -95,8 +95,7 @@ public:
 
     void decode() {
         if (path.empty()) {
-            cout << "Unable to decode: Prufer code is empty.";
-            throw 1;
+            throw logic_error("Unable to decode: Prufer code is empty.");
         }
         cout << endl;
         startDecoding();
