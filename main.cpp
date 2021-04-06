@@ -50,12 +50,12 @@ private:
         }
     }
 
-    void startCoding(int minVertex, int m) {
-        while (m - path.size() != 1) {
+    void startCoding(int minVertex) {
+        while (graph.size() - 1 - path.size() != 1) {
             path.push_back(parent(minVertex));
             graph[minVertex].erase(find(graph[minVertex].begin(), graph[minVertex].end(), parent(minVertex)));
             graph[parent(minVertex)].erase(find(graph[parent(minVertex)].begin(), graph[parent(minVertex)].end(), minVertex));
-            startCoding(min(), m);
+            startCoding(min());
         }
     }
 
@@ -74,9 +74,9 @@ public:
         graph.resize(n);
     };
 
-    void fillGraph(int m) {
+    void fillGraph() {
         int start, finish;
-        for (int i = 0; i < m; ++i) {
+        for (int i = 0; i < graph.size() - 1; ++i) {
             cin >> start >> finish;
             vertices.insert(start - 1);
             vertices.insert(finish - 1);
@@ -85,8 +85,8 @@ public:
         }
     }
 
-    void code(int m) {
-        startCoding(min(), m);
+    void code() {
+        startCoding(min());
         cout << "Prufer code: \n";
         for (int path : path) {
             cout << path + 1 << " ";
@@ -114,8 +114,8 @@ int main() {
 
     Prufer prufer;
     prufer.resize(n);
-    prufer.fillGraph(n - 1);
-    prufer.code(n - 1);
+    prufer.fillGraph();
+    prufer.code();
     prufer.decode();
     return 0;
 }
