@@ -1,3 +1,5 @@
+// Описание алгоритма - http://sashafromlibertalia.herokuapp.com/projects/pruferCode
+
 #include "iostream"
 #include "vector"
 #include "set"
@@ -41,8 +43,8 @@ private:
 
     // Find the second vertex of the edge
     int parent(int vertex) {
-        for (int i = 0; i < graph.size(); ++i) {
-            for (int j = 0; j < graph[i].size(); ++j) {
+        for (int i = 0; i < graph.size(); i++) {
+            for (int j = 0; j < graph[i].size(); j++) {
                 if (graph[i][j] == vertex) {
                     return i;
                 }
